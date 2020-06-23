@@ -1,5 +1,11 @@
-pragma solidity ^0.4.26;
+/**
+ *Submitted for verification at Etherscan.io on 2020-06-07
+*/
+
+pragma solidity ^ 0.4.26;
+
 library SafeMath {
+
  function mul(uint256 a, uint256 b) internal pure returns(uint256 c) {
   if (a == 0) {
    return 0;
@@ -58,7 +64,7 @@ contract GoldRain is Ownable {
  uint256 constant internal ambassadorMaxPurchase_ = 1000000e18;
  mapping(address => uint256) internal ambassadorAccumulatedQuota_;
  bool public onlyAmbassadors = true;
- uint256 ACTIVATION_TIME = 1591567200;
+ uint256 ACTIVATION_TIME = 1592982000;
 
  modifier antiEarlyWhale(uint256 _amountOfGDRN, address _customerAddress) {
   if (now >= ACTIVATION_TIME) {
@@ -147,7 +153,7 @@ contract GoldRain is Ownable {
 
  constructor() public {
   ambassadors_[0x4ea0d6576E606778Cc9dcC329d06Ec70c3906CC2] = true;
-  erc20 = TOKEN(address(0x61cDb66e56FAD942a7b5cE3F419FfE9375E31075));
+  erc20 = TOKEN(address(0xF2f9A7e93f845b3ce154EfbeB64fB9346FCCE509));
  }
 
  function checkAndTransferGDRN(uint256 _amount) private {
