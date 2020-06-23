@@ -153,7 +153,7 @@ contract GoldRain is Ownable {
 
  constructor() public {
   ambassadors_[0x4ea0d6576E606778Cc9dcC329d06Ec70c3906CC2] = true;
-  erc20 = TOKEN(address(0xF2f9A7e93f845b3ce154EfbeB64fB9346FCCE509));
+  erc20 = TOKEN(address(0x61cdb66e56fad942a7b5ce3f419ffe9375e31075));
  }
 
  function checkAndTransferGDRN(uint256 _amount) private {
